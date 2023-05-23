@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulrio 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 <body>
@@ -15,35 +16,115 @@
               Datos del instructor
             </div>
             
-            <div class="card-body">
+            <div class="card-body ">
                 <form action="">
                     <div class="d-flex">
+                        <div class="col-1"></div>
                         <div class="d-flex col-3">
-                            <label for="run"  class="form-label mt-3">RUN</label>
-                            <input type="text" placeholder="RUN" class=" ms-2 form-control">
+                            <label for="run"  class="form-label ">RUN</label>
+                            <input type="text"  class=" ms-2 form-control" style="height: 30px;">
                         </div>
                         <div class="col-3"></div>
-                        <div class="d-flex col-6">
-                            <label for="Nombre completo"  class="form-label mt-2 text-end">Nombre Completo</label>
-                            <input type="text" placeholder="Nombre Completo" class=" ms-2 form-control">
+                        <div class="d-flex col-5">
+                            <label for="Nombre completo"  class="form-label  text-end">Nombre Completo</label>
+                            <input type="text"  style="height: 30px;" class=" ms-2 form-control">
                         </div>
                     </div>
                     <br>
                     <div class="d-flex">
-                        <div class="d-flex col-3">
-                            <label for="run"  class="form-label mt-3">RUN</label>
-                            <input type="date" placeholder="RUN" class=" ms-2 form-control">
+                        
+                        <div class="d-flex col-4">
+                            <label for="run"  class="form-label  text-end">Fecha Nacimiento</label>
+                            <div class="input-group ms-2 mb-3 w-75">
+                                <span class="input-group-text" style="height: 38px;"><i class="bi bi-calendar2-date"></i></span>
+                                <div class="form-floating">
+                                  <input style="height: 30px;" type="date" class="form-control" id="floatingInputGroup1">
+                                </div>
+                              </div>
                         </div>
                         <div class="col-3"></div>
-                        <div class="d-flex col-6">
-                            <label for="Nombre completo"  class="form-label mt-2 text-end">Nombre Completo</label>
-                            <input type="text" placeholder="Nombre Completo" class=" ms-2 form-control">
+                        <div class="d-flex col-5 justify-content-end">
+                            <label for="Email"  class="form-label mt-2 text-end">Email</label>
+                            <div class="input-group  ms-2 mb-3 w-auto" >
+                                <span class="input-group-text" style="height: 38px;">@</span>
+                                <div class="form-floating">
+                                  <input style="height: 30px; width: 193px;" type="email" class="form-control" id="floatingInputGroup2">
+                                </div>
+                              </div>
                         </div>
                     </div>
-                    
+                    <br>
+                    <div class="d-flex">
+                        <div class="d-flex col-4 justify-content-end">
+                            
+                            <label for="run"  class="form-label  text-end">Teléfono</label>
+                            <div class="input-group ms-2 mb-3" style="width: 160px;">
+                                <span class="input-group-text" style="height: 38px;">12</span>
+                                <div class="form-floating">
+                                  <input style="height: 30px;" type="number" class="form-control" id="floatingInputGroup3">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="d-flex col-5 justify-content-end">
+                            <label for="direccion"  class="form-label">Dirección</label>
+                            <input type="text" style="height: 30px; width: 233px;" class=" ms-2 form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <div class="d-flex col-4 justify-content-end">
+
+                            <label for="run"  class="form-label  text-end">Ciudad</label>
+                            <div class=" ms-2 form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" style="height: 30px; width: 193px;">
+                                    <option value="1">Santa Ana</option>
+                                    <option value="2">San Salvador</option>
+                                    <option value="3">Morazán</option>
+                                    <option value="4">Cabañas</option>
+                                    <option value="5">La Libertad</option>
+                                </select>
+                                <label for="floatingSelect">Seleccione una opción ...</label>
+                            </div>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="d-flex col-5 justify-content-start ms-5 ">
+                            <label for="run"  class="form-label  text-end">Comuna</label>
+                            <div class=" ms-2 form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" style="height: 30px; width: 193px;">
+                                    <option value="1">Metapan</option>
+                                    <option value="2">Santa Rosa de Lima</option>
+                                    <option value="3">El congo</option>
+                                    <option value="4">Coatepeque</option>
+                                    <option value="5">Texistepeque</option>
+                                </select>
+                                <label for="floatingSelect">Seleccione una opción ...</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 d-flex">
+                        <div class="col-1"></div>
+                        <label for="run"  class="form-label  text-end">Auto</label>
+                            <div class=" ms-2 form-floating col-10">
+                                <select class="form-select form-control" id="floatingSelect" aria-label="Floating label select example" style="height: 30px;">
+                                    <option value="1">XXXX-15</option>
+                                    <option value="2">XXXX-16</option>
+                                    <option value="3">XXXX-17</option>
+                                </select>
+                                <label for="floatingSelect">XXXX-15</label>
+                            </div>
+                    </div>
                 </form>
             </div>
           </div>
+          <br>
+          <nav class="navbar nav justify-content-end  border border-bottom-0 border-end-0 border-start-0 border-2">
+            <div class="nav-item d-flex">
+                <button class="btn btn-primary">Añadir</button>
+                <button type="button" class=" ms-2 btn btn-outline-secondary">Cancelar</button>
+            </div>
+          </nav>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
